@@ -1,0 +1,109 @@
+body,html{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Play', sans-serif;
+}
+.menu{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    color: white;
+    background: black;
+}
+
+
+body{
+    overflow: hidden;
+}
+.container{
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+h1{
+    text-align: center;
+}
+
+li{
+    width: 12vw;
+    text-align: center;
+    margin-right: 10vw;
+    margin-left: 1vw;
+    font-size: 1rem;
+}
+
+#home{
+   margin-top: 8vh;
+   background-image: url(images/kees-streefkerk-Adl90-aXYwA-unsplash.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+    color: black;
+}
+#about{
+   background-image: url(images/boudhayan-bardhan-60tataLkJ0U-unsplash.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;  
+}
+#service{
+   background-image: url(images/david-marcu-78A265wPiO4-unsplash.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;  
+}
+#contact{ 
+   background-image: url(images/v2osk-1Z2niiBPg5A-unsplash.jpg);
+   background-size: cover;
+   background-repeat: no-repeat; 
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    scroll-snap-align: center;
+    background-color: black;
+}
+
+.active{
+    animation: pop 500ms;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+}
+
+
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+
+
+@keyframes pop {
+    0%{
+      opacity: 0.3;  
+    }
+
+    100%{
+        opacity: 1
+    }
+    
+}
